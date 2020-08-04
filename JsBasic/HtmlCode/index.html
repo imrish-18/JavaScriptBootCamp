@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JavaScriptBootCamp</title>
+    <script src="D:\JsBootCamp\JavaScriptBootCamp\jsBasic\Script\string.js" defer>
+
+    </script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h1>JavaScript Code</h1> 
+      
+    <h2>JavaScript Function Call</h2> 
+      
+    <p> 
+        It calls the employee details of emp2 
+    </p> 
+      
+    <p id="GFG"></p> 
+      
+    <!-- Script to use call() method and display 
+        the emp2 details -->
+    <script> 
+        var employee = { 
+            details: function() { 
+                return this.name + " " + this.id; 
+            } 
+        } 
+          
+        var emp1 = { 
+            name:"Geeks", 
+            id: "234412", 
+        } 
+          
+        var emp2 = { 
+            name:"G4G", 
+            id: "434556", 
+        } 
+          
+        var x = employee.details.call(emp2);  
+        document.getElementById("GFG").innerHTML = x;  
+    </script> 
+</body>
+</html>
